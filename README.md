@@ -11,3 +11,7 @@ The code is ONLY designed for ARCGIS Pro as it uses the extension: arcpy.
 
 The second python file, is a file that creates a scatterplot graph according to the data that you processed through the first python file. 
 Extensions pandas, matplotlib.pyplot and scipy.stats are used.
+
+The shapefile 'shortened_roads.shp' is a clipped version of the roads shapefile originally from the GEODATA TOPO 250K Series 3 data. (C) Copyright Commonwealth of Australia  (Geoscience Australia) 2006
+
+The CSV file contains 20 study sites that recorded the number of Koalas encountered around the site. It also has the Longitude & Latitude coordinates of those sites.
