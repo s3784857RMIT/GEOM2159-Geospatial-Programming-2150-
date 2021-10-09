@@ -1,5 +1,5 @@
 # GEOM2159-Geospatial-Programming-2150-
-GitHub site for Semester 2 Geospatial Programming Final project
+GitHub site for Semester 2 Geospatial Programming Final Project
 
 The two codes that are brought into this GitHub Folder today are apart of the entire Final Project. 
 
