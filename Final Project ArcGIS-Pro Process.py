@@ -37,8 +37,8 @@ arcpy.management.Dissolve("roadsbuffer_intersect", r"C:\Users\dsmcm\Desktop\Fina
 # Creating a new field for our distance.
 # Including the input table from the dissolve output, the field name, field type being double, the field precision, scale & length are left to none. Not needed.
 # Field alias is left blank, allowing fields to include null values. Allowing the newly created field to be not required, but not allowing any constrains.
-arcpy.management.AddField("roadsbuffer_intersect_Dissolve", "Metres", "DOUBLE", None, None, None, '', "NULLABLE", "NON_REQUIRED", '')
+arcpy.management.AddField("roadsbuffer_intersect_Dissolve", "Kilometres", "DOUBLE", None, None, None, '', "NULLABLE", "NON_REQUIRED", '')
 # Including the value of the road length that was gathered from the feature class of 'roadsforkoala', establishing the length to be metres. (Backed up with coordinates)
-arcpy.management.CalculateField("roadsbuffer_intersect_Dissolve", "Metres", "!Shape_Length!", "PYTHON3", '', "TEXT", "NO_ENFORCE_DOMAINS")
+arcpy.management.CalculateField("roadsbuffer_intersect_Dissolve", "Kilometres", "!Shape_Length!", "PYTHON3", '', "TEXT", "NO_ENFORCE_DOMAINS")
 # Exported the new attribute table into a Excel spreadsheet to be continued on with the second part of the project.
 arcpy.conversion.TableToExcel("roadsbuffer_intersect_Dissolve", r"C:\Users\dsmcm\Desktop\Final project Programming\result_table.xls", "NAME", "CODE")
