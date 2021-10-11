@@ -26,7 +26,7 @@ arcpy.analysis.Clip("roadsbuffer", "KoalaLocationLLGDA94_Buffer",
 arcpy.Merge_management(["roadsbuffer_Clip"], r"C:\Users\dsmcm\Desktop\Final project Programming\Final Project Program ArcPY\Final Project Program ArcPY.gdb\roadsbuffer_Clip_Merge1",
                        "", "ADD_SOURCE_INFO")
 # Process designed to gather features that overlap, then will be written to the output feature class.
-# The line contains, input features, the output feature class, the join attributes which will be "ALL", cluster tolerance once again set to None, the output type being the input.
+# The line contains: input features, the output feature class, the join attributes which will be "ALL", cluster tolerance once again set to None, the output type being the input.
 arcpy.analysis.Intersect("roadsbuffer_Clip_Merge1 #;roadsbuffer_Clip #;KoalaLocationLLGDA94_Buffer #;roadsbuffer #",
                          r"C:\Users\dsmcm\Desktop\Final project Programming\Final Project Program ArcPY\Final Project Program ArcPY.gdb\roadsbuffer_intersect", "ALL", None, "INPUT")
 # Combining features based on specific attributes
