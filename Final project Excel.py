@@ -5,7 +5,7 @@ from scipy.stats import pearsonr
 koalapoints = pd.read_excel(r"C:\Users\dsmcm\Desktop\Final project Programming\result_table.xls")
 print(koalapoints)
 # Establishing a link to the excel spreadsheet, following with printing the values that are in each cell.
-x = list(koalapoints['Metres'])
+x = list(koalapoints['Kilometres'])
 y = list(koalapoints['Koala_Num'])
 # Assigning the x & y values to the length of the road within each location and the number of koalas.
 plt.figure(figsize=(10,10))
