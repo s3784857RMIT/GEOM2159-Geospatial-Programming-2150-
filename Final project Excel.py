@@ -1,6 +1,5 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from scipy.stats import linregress
 from scipy.stats import pearsonr
 # Importing necessary extensions to complete this second half of the project.
 koalapoints = pd.read_excel(r"C:\Users\dsmcm\Desktop\Final project Programming\result_table.xls")
